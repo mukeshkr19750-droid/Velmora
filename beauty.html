@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Beauty | Velmora - Beauty & Self Care Products</title>
+    <meta name="description" content="Shop beauty and self-care products at Velmora. Discover beauty essentials, skincare, makeup and cosmetics for your daily routine.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Velmora">
+    <meta name="theme-color" content="#070707">
+
+    <link rel="canonical" href="https://www.velmora.com/beauty.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='75' fill='%23fff' font-weight='bold'%3EV%3C/text%3E%3C/svg%3E">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Beauty | Velmora">
+    <meta property="og:description" content="Discover beauty and self-care products at Velmora.">
+    <meta property="og:url" content="https://www.velmora.com/beauty.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Beauty | Velmora">
+    <meta name="twitter:description" content="Shop beauty and self-care essentials.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Beauty Collection",
+        "url": "https://www.velmora.com/beauty.html"
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    font-family:Arial, sans-serif;
+    background:#080808;
+    color:white;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+.container {
+    width:min(1350px,92%);
+    margin:auto;
+}
+
+header {
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(8,8,8,.9);
+    backdrop-filter:blur(20px);
+
+    border-bottom:1px solid #222;
+}
+
+.nav {
+    min-height:78px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo {
+    font-size:25px;
+    font-weight:900;
+}
+
+.logo span {
+    color:#777;
+}
+
+.nav-links {
+    display:flex;
+    gap:22px;
+}
+
+.nav-links a {
+    color:#888;
+    font-size:13px;
+    font-weight:700;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color:white;
+}
+
+.hero {
+    padding:100px 0 70px;
+
+    background:
+    radial-gradient(
+        circle at 80% 20%,
+        rgba(255,255,255,.1),
+        transparent 30%
+    );
+}
+
+.eyebrow {
+    color:#777;
+    font-size:11px;
+    font-weight:900;
+    letter-spacing:.2em;
+}
+
+.breadcrumb {
+    color:#666;
+    font-size:12px;
+    margin-bottom:35px;
+}
+
+h1 {
+    margin-top:15px;
+
+    font-size:clamp(55px,9vw,105px);
+
+    line-height:.9;
+    letter-spacing:-.08em;
+}
+
+h1 span {
+    color:#777;
+}
+
+.hero p {
+    max-width:650px;
+    margin-top:25px;
+
+    color:#888;
+    font-size:16px;
+    line-height:1.8;
+}
+
+.categories {
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+
+    padding:20px 0 45px;
+}
+
+.categories a {
+    padding:10px 18px;
+
+    border:1px solid #292929;
+    border-radius:100px;
+
+    color:#888;
+    font-size:12px;
+    font-weight:700;
+}
+
+.categories a:hover,
+.categories .active {
+    background:white;
+    color:black;
+}
+
+.toolbar {
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:15px;
+}
+
+.search {
+    display:flex;
+    align-items:center;
+
+    min-height:54px;
+    padding:0 18px;
+
+    border:1px solid #292929;
+    border-radius:13px;
+
+    background:#0d0d0d;
+}
+
+.search input {
+    width:100%;
+
+    border:0;
+    outline:0;
+
+    background:transparent;
+    color:white;
+
+    padding-left:10px;
+}
+
+select {
+    min-height:54px;
+
+    background:#0d0d0d;
+    color:white;
+
+    border:1px solid #292929;
+    border-radius:13px;
+
+    padding:0 20px;
+}
+
+.products {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+
+    margin-top:30px;
+}
+
+.card {
+    animation:appear .5s ease both;
+}
+
+@keyframes appear {
+
+    from {
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.image {
+    position:relative;
+
+    aspect-ratio:1/1.08;
+
+    overflow:hidden;
+    border-radius:18px;
+
+    background:#111;
+}
+
+.image img {
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s;
+}
+
+.card:hover img {
+    transform:scale(1.06);
+}
+
+.wishlist {
+    position:absolute;
+    z-index:2;
+
+    top:12px;
+    right:12px;
+
+    width:40px;
+    height:40px;
+
+    border:1px solid #444;
+    border-radius:50%;
+
+    background:rgba(0,0,0,.6);
+    color:white;
+
+    cursor:pointer;
+}
+
+.wishlist.active {
+    background:white;
+    color:black;
+}
+
+.info {
+    padding:15px 3px;
+}
+
+.category {
+    color:#666;
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:.12em;
+}
+
+h2 {
+    margin-top:5px;
+    font-size:17px;
+}
+
+.rating {
+    margin-top:7px;
+    color:#aaa;
+    font-size:11px;
+}
+
+.bottom {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-top:12px;
+}
+
+.price {
+    font-weight:900;
+}
+
+.add {
+    border:0;
+    border-radius:9px;
+
+    padding:9px 14px;
+
+    background:white;
+    color:black;
+
+    font-size:10px;
+    font-weight:900;
+
+    cursor:pointer;
+}
+
+.seo {
+    margin:100px 0;
+    padding:70px 0;
+
+    border-top:1px solid #222;
+    border-bottom:1px solid #222;
+}
+
+.seo h2 {
+    max-width:800px;
+
+    font-size:clamp(35px,5vw,65px);
+
+    line-height:1;
+    letter-spacing:-.06em;
+}
+
+.seo h2 span {
+    color:#666;
+}
+
+.seo p {
+    max-width:850px;
+
+    margin-top:25px;
+
+    color:#777;
+
+    font-size:14px;
+    line-height:1.9;
+}
+
+footer {
+    padding:65px 0 30px;
+}
+
+.footer-grid {
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:40px;
+}
+
+.footer-column h3 {
+    font-size:12px;
+    margin-bottom:15px;
+}
+
+.footer-column a {
+    display:block;
+
+    margin:9px 0;
+
+    color:#666;
+    font-size:12px;
+}
+
+.footer-column a:hover {
+    color:white;
+}
+
+@media(max-width:1000px) {
+
+    .products {
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+@media(max-width:750px) {
+
+    .nav-links {
+        display:none;
+    }
+
+    .toolbar {
+        grid-template-columns:1fr;
+    }
+
+    .products {
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:500px) {
+
+    .products {
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container nav">
+
+<a href="index.html" class="logo">
+VELM<span>ORA</span>
+</a>
+
+<nav class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="fashion.html">Fashion</a>
+<a href="beauty.html" class="active">Beauty</a>
+<a href="gadgets.html">Gadgets</a>
+<a href="home.html">Home</a>
+
+</nav>
+
+<div>
+🛒 <span id="cartCount">0</span>
+</div>
+
+</div>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="breadcrumb">
+
+<a href="index.html">Home</a>
+/
+<a href="shop.html">Shop</a>
+/
+Beauty
+
+</div>
+
+<span class="eyebrow">
+VELMORA BEAUTY
+</span>
+
+<h1>
+Beauty
+<span>Essentials.</span>
+</h1>
+
+<p>
+Discover beauty and self-care essentials selected
+for simple, modern everyday routines.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="container">
+
+<nav class="categories">
+
+<a href="shop.html">All Products</a>
+<a href="fashion.html">Fashion</a>
+<a href="beauty.html" class="active">Beauty</a>
+<a href="gadgets.html">Gadgets</a>
+<a href="home.html">Home Essentials</a>
+
+</nav>
+
+
+<div class="toolbar">
+
+<div class="search">
+
+🔎
+
+<input
+id="search"
+type="search"
+placeholder="Search beauty products..."
+>
+
+</div>
+
+<select id="sort">
+
+<option value="featured">
+Featured
+</option>
+
+<option value="low">
+Price: Low to High
+</option>
+
+<option value="high">
+Price: High to Low
+</option>
+
+<option value="rating">
+Highest Rated
+</option>
+
+</select>
+
+</div>
+
+
+<div
+class="products"
+id="products">
+</div>
+
+</section>
+
+
+<section class="seo">
+
+<div class="container">
+
+<span class="eyebrow">
+VELMORA BEAUTY
+</span>
+
+<h2>
+Simple products for
+<span>modern routines.</span>
+</h2>
+
+<p>
+Explore Velmora's beauty collection featuring
+carefully selected beauty and self-care products
+for modern everyday routines.
+</p>
+
+<p>
+Discover beauty essentials online and explore
+other Velmora categories including fashion,
+gadgets and home essentials.
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<a href="index.html" class="logo">
+VELM<span>ORA</span>
+</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Shop</h3>
+
+<a href="shop.html">All Products</a>
+<a href="fashion.html">Fashion</a>
+<a href="beauty.html">Beauty</a>
+<a href="gadgets.html">Gadgets</a>
+<a href="home.html">Home Essentials</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Company</h3>
+
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="privacy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+
+</div>
+
+<div class="footer-column">
+
+<h3>Help</h3>
+
+<a href="faq.html">FAQ</a>
+<a href="shipping.html">Shipping</a>
+<a href="returns.html">Returns</a>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+const products = [
+
+{
+id:101,
+name:"Glow Beauty Kit",
+price:39.99,
+rating:4.9,
+image:"https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=85"
+},
+
+{
+id:102,
+name:"Beauty Mirror",
+price:69.99,
+rating:4.7,
+image:"https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=900&q=85"
+},
+
+{
+id:103,
+name:"Daily Beauty Set",
+price:49.99,
+rating:4.6,
+image:"https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=900&q=85"
+},
+
+{
+id:104,
+name:"Self Care Organizer",
+price:34.99,
+rating:4.5,
+image:"https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=900&q=85"
+}
+
+];
+
+
+let cart =
+JSON.parse(
+localStorage.getItem("velmoraCart")
+) || [];
+
+
+let wishlist =
+JSON.parse(
+localStorage.getItem("velmoraWishlist")
+) || [];
+
+
+const container =
+document.getElementById("products");
+
+
+function render() {
+
+let result=[...products];
+
+const query =
+document.getElementById("search")
+.value
+.toLowerCase();
+
+
+if(query) {
+
+result=result.filter(
+p=>p.name.toLowerCase().includes(query)
+);
+
+}
+
+
+const sort =
+document.getElementById("sort").value;
+
+
+if(sort==="low")
+result.sort((a,b)=>a.price-b.price);
+
+
+if(sort==="high")
+result.sort((a,b)=>b.price-a.price);
+
+
+if(sort==="rating")
+result.sort((a,b)=>b.rating-a.rating);
+
+
+container.innerHTML =
+result.map(p=>`
+
+<article class="card">
+
+<div class="image">
+
+<button
+class="wishlist ${
+wishlist.includes(p.id)
+?"active":""
+}"
+onclick="wishlistToggle(${p.id})">
+
+${wishlist.includes(p.id)?"♥":"♡"}
+
+</button>
+
+<img
+src="${p.image}"
+alt="${p.name} - Velmora Beauty"
+loading="lazy"
+>
+
+</div>
+
+<div class="info">
+
+<div class="category">
+Beauty
+</div>
+
+<h2>${p.name}</h2>
+
+<div class="rating">
+★★★★★ ${p.rating}
+</div>
+
+<div class="bottom">
+
+<span class="price">
+$${p.price.toFixed(2)}
+</span>
+
+<button
+class="add"
+onclick="add(${p.id})">
+
+Add
+
+</button>
+
+</div>
+
+</div>
+
+</article>
+
+`).join("");
+
+}
+
+
+function add(id) {
+
+const p =
+products.find(
+x=>x.id===id
+);
+
+cart.push(p);
+
+localStorage.setItem(
+"velmoraCart",
+JSON.stringify(cart)
+);
+
+updateCart();
+
+}
+
+
+function wishlistToggle(id) {
+
+if(wishlist.includes(id)) {
+
+wishlist =
+wishlist.filter(
+x=>x!==id
+);
+
+} else {
+
+wishlist.push(id);
+
+}
+
+localStorage.setItem(
+"velmoraWishlist",
+JSON.stringify(wishlist)
+);
+
+render();
+
+}
+
+
+function updateCart() {
+
+document.getElementById(
+"cartCount"
+).textContent=cart.length;
+
+}
+
+
+document.getElementById("search")
+.addEventListener("input",render);
+
+
+document.getElementById("sort")
+.addEventListener("change",render);
+
+
+render();
+
+updateCart();
+
+</script>
+
+</body>
+</html>

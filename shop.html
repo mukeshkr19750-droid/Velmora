@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ================================
+         BASIC SEO
+    ================================= -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Shop | Velmora - Fashion, Beauty, Gadgets & Home Essentials
+    </title>
+
+    <meta name="description"
+          content="Shop Velmora's collection of fashion, beauty products, smart gadgets and home essentials. Search, filter and sort products to find what you need.">
+
+    <meta name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <meta name="author"
+          content="Velmora">
+
+    <meta name="theme-color"
+          content="#070707">
+
+
+    <!-- ================================
+         CANONICAL
+    ================================= -->
+
+    <link rel="canonical"
+          href="https://www.velmora.com/shop.html">
+
+
+    <!-- ================================
+         FAVICON
+    ================================= -->
+
+    <link rel="icon"
+          type="image/png"
+          href="assets/favicon.png">
+
+
+    <!-- ================================
+         FONTS
+    ================================= -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ================================
+         OPEN GRAPH
+    ================================= -->
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:title"
+          content="Shop Velmora | Premium Products">
+
+    <meta property="og:description"
+          content="Explore fashion, beauty, gadgets and home essentials at Velmora.">
+
+    <meta property="og:url"
+          content="https://www.velmora.com/shop.html">
+
+    <meta property="og:site_name"
+          content="Velmora">
+
+    <meta property="og:image"
+          content="https://www.velmora.com/assets/og-image.jpg">
+
+
+    <!-- ================================
+         TWITTER
+    ================================= -->
+
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="Shop Velmora">
+
+    <meta name="twitter:description"
+          content="Discover premium products at Velmora.">
+
+    <meta name="twitter:image"
+          content="https://www.velmora.com/assets/og-image.jpg">
+
+
+    <!-- ================================
+         WEBSITE STRUCTURED DATA
+    ================================= -->
+
+    <script type="application/ld+json">
+
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+
+        "name": "Velmora",
+
+        "url": "https://www.velmora.com/",
+
+        "potentialAction": {
+            "@type": "SearchAction",
+
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate":
+                "https://www.velmora.com/shop.html?search={search_term_string}"
+            },
+
+            "query-input":
+            "required name=search_term_string"
+        }
+    }
+
+    </script>
+
+
+    <!-- ================================
+         BREADCRUMB STRUCTURED DATA
+    ================================= -->
+
+    <script type="application/ld+json">
+
+    {
+        "@context": "https://schema.org",
+
+        "@type": "BreadcrumbList",
+
+        "itemListElement": [
+
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.velmora.com/"
+            },
+
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Shop",
+                "item":
+                "https://www.velmora.com/shop.html"
+            }
+
+        ]
+
+    }
+
+    </script>
+
+
+    <!-- ================================
+         CSS
+    ================================= -->
+
+    <link rel="stylesheet"
+          href="styles.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- ================================
+     ANNOUNCEMENT
+================================= -->
+
+<div class="announcement-bar">
+
+    <p>
+
+        🚚 Free shipping on eligible orders
+
+        <span>•</span>
+
+        ✨ Discover Velmora
+
+    </p>
+
+</div>
+
+
+<!-- ================================
+     HEADER
+================================= -->
+
+<header class="header"
+        id="header">
+
+    <div class="container nav">
+
+
+        <!-- LOGO -->
+
+        <a href="index.html"
+           class="logo"
+           aria-label="Velmora Home">
+
+            VELM<span>ORA</span>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="nav-links"
+             id="navLinks"
+             aria-label="Primary navigation">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="shop.html"
+               class="active">
+
+                Shop
+
+            </a>
+
+            <a href="categories/fashion.html">
+                Fashion
+            </a>
+
+            <a href="categories/beauty.html">
+                Beauty
+            </a>
+
+            <a href="categories/gadgets.html">
+                Gadgets
+            </a>
+
+            <a href="categories/home.html">
+                Home
+            </a>
+
+            <a href="#">
+                About
+            </a>
+            </a>
+
+        </nav>
+
+
+        <!-- ACTIONS -->
+
+        <div class="nav-actions">
+
+
+            <button class="icon-btn"
+                    id="searchBtn"
+                    aria-label="Search">
+
+                ⌕
+
+            </button>
+
+
+            <button class="icon-btn"
+                    id="wishlistBtn"
+                    aria-label="Wishlist">
+
+                ♡
+
+            </button>
+
+
+            <button class="cart-btn"
+                    id="cartBtn"
+                    aria-label="Shopping cart">
+
+                🛒
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+
+            <button class="menu-btn"
+                    id="menuBtn"
+                    aria-label="Open menu">
+
+                ☰
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================================
+     SEARCH PANEL
+================================= -->
+
+<div class="search-panel"
+     id="searchPanel">
+
+    <div class="container search-container">
+
+
+        <label for="searchInput"
+               class="sr-only">
+
+            Search products
+
+        </label>
+
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Search products..."
+            autocomplete="off"
+        >
+
+
+        <button id="closeSearch"
+                aria-label="Close search">
+
+            ×
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+<!-- ================================
+     MAIN
+================================= -->
+
+<main>
+
+
+<!-- ================================
+     SHOP HERO
+================================= -->
+
+<section class="shop-hero">
+
+    <div class="container">
+
+
+        <div class="breadcrumb">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <span>
+                /
+            </span>
+
+            <span>
+                Shop
+            </span>
+
+        </div>
+
+
+        <span class="eyebrow">
+
+            VELMORA COLLECTION
+
+        </span>
+
+
+        <h1>
+
+            Shop Everything
+            <span>You Love.</span>
+
+        </h1>
+
+
+        <p>
+
+            Explore our collection of fashion,
+            beauty, gadgets and home essentials.
+
+        </p>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================================
+     SHOP CONTENT
+================================= -->
+
+<section class="section shop-section">
+
+    <div class="container">
+
+
+        <!-- ============================
+             TOOLBAR
+        ============================= -->
+
+        <div class="shop-toolbar">
+
+
+            <!-- SEARCH -->
+
+            <div class="shop-search">
+
+                <label for="shopSearch"
+                       class="sr-only">
+
+                    Search products
+
+                </label>
+
+
+                <span>
+                    ⌕
+                </span>
+
+
+                <input
+                    type="search"
+                    id="shopSearch"
+                    placeholder="Search products..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <!-- SORT -->
+
+            <div class="sort-wrapper">
+
+                <label for="sortProducts">
+
+                    Sort by:
+
+                </label>
+
+
+                <select id="sortProducts">
+
+                    <option value="featured">
+                        Featured
+                    </option>
+
+                    <option value="price-low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="price-high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="rating">
+                        Highest Rated
+                    </option>
+
+                    <option value="name">
+                        Name: A-Z
+                    </option>
+
+                    <option value="newest">
+                        Newest
+                    </option>
+
+                </select>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- ============================
+             CATEGORY FILTERS
+        ============================= -->
+
+        <div class="shop-categories"
+             aria-label="Product categories">
+
+
+            <button class="category-filter active"
+                    data-category="All">
+
+                All Products
+
+            </button>
+
+
+            <button class="category-filter"
+                    data-category="Fashion">
+
+                Fashion
+
+            </button>
+
+
+            <button class="category-filter"
+                    data-category="Beauty">
+
+                Beauty
+
+            </button>
+
+
+            <button class="category-filter"
+                    data-category="Gadgets">
+
+                Gadgets
+
+            </button>
+
+
+            <button class="category-filter"
+                    data-category="Home">
+
+                Home Essentials
+
+            </button>
+
+
+        </div>
+
+
+        <!-- ============================
+             RESULT INFO
+        ============================= -->
+
+        <div class="shop-result-bar">
+
+
+            <p id="resultCount">
+
+                Showing products
+
+            </p>
+
+
+            <button id="clearFilters"
+                    class="clear-filters">
+
+                Clear Filters
+
+            </button>
+
+
+        </div>
+
+
+        <!-- ============================
+             PRODUCTS
+        ============================= -->
+
+        <div class="product-grid shop-product-grid"
+             id="shopProductGrid">
+
+            <!-- JavaScript renders products -->
+
+        </div>
+
+
+        <!-- ============================
+             NO RESULTS
+        ============================= -->
+
+        <div class="no-results"
+             id="noResults"
+             hidden>
+
+
+            <div class="no-results-icon">
+                🔎
+            </div>
+
+
+            <h2>
+                No products found
+            </h2>
+
+
+            <p>
+
+                Try another search or
+                remove some filters.
+
+            </p>
+
+
+            <button
+                class="btn primary"
+                id="resetShop">
+
+                Reset Filters
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================================
+     SHOP SEO CONTENT
+================================= -->
+
+<section class="section seo-content">
+
+    <div class="container">
+
+
+        <span class="eyebrow">
+
+            SHOP VELMORA
+
+        </span>
+
+
+        <h2>
+
+            Discover Products
+            for <span>Everyday Life.</span>
+
+        </h2>
+
+
+        <p>
+
+            Velmora is an online shopping destination
+            featuring a curated selection of fashion,
+            beauty products, smart gadgets and home
+            essentials. Browse our collection to discover
+            products selected for modern everyday living.
+
+        </p>
+
+
+        <p>
+
+            Use our category filters and product search
+            to quickly explore the collection. You can
+            also sort products by price, rating and name
+            to find products that match your preferences.
+
+        </p>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================================
+     FOOTER
+================================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+
+        <div class="footer-brand">
+
+
+            <a href="index.html"
+               class="logo">
+
+                VELM<span>ORA</span>
+
+            </a>
+
+
+            <p>
+
+                Fashion, beauty, gadgets and
+                home essentials for modern living.
+
+            </p>
+
+
+        </div>
+
+
+        <div>
+
+            <h2>
+                Shop
+            </h2>
+
+            <a href="shop.html">
+                All Products
+            </a>
+
+            <a href="categories/fashion.html">
+                Fashion
+            </a>
+
+            <a href="categories/beauty.html">
+                Beauty
+            </a>
+
+            <a href="categories/gadgets.html">
+                Gadgets
+            </a>
+
+            <a href="categories/home.html">
+                Home Essentials
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h2>
+                Company
+            </h2>
+
+            <a href="#">
+                About Velmora
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h2>
+                Information
+            </h2>
+
+            <a href="#">
+                Privacy Policy
+            </a>
+
+            <a href="#">
+                Terms & Conditions
+            </a>
+
+            <a href="#">
+                Shipping Policy
+            </a>
+
+            <a href="#">
+                Returns
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © 2026 Velmora.
+                All rights reserved.
+            </p>
+
+            <p>
+                Premium online shopping.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================================
+     OVERLAY
+================================= -->
+
+<div class="overlay"
+     id="overlay">
+</div>
+
+
+<!-- ================================
+     CART DRAWER
+================================= -->
+
+<aside class="cart-drawer"
+       id="cartDrawer"
+       aria-label="Shopping cart">
+
+
+    <div class="cart-header">
+
+        <h2>
+            Your Cart
+        </h2>
+
+
+        <button id="closeCart"
+                aria-label="Close cart">
+
+            ×
+
+        </button>
+
+    </div>
+
+
+    <div class="cart-items"
+         id="cartItems">
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cartTotal">
+                $0.00
+            </strong>
+
+        </div>
+
+
+        <button class="checkout-btn"
+                id="checkoutBtn">
+
+            Proceed to Checkout →
+
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- ================================
+     TOAST
+================================= -->
+
+<div class="toast"
+     id="toast"
+     role="status"
+     aria-live="polite">
+
+    <span>
+        ✓
+    </span>
+
+    <p>
+        Product added.
+    </p>
+
+</div>
+
+
+<!-- ================================
+     JAVASCRIPT
+================================= -->
+
+<script src="script.js"
+        defer>
+</script>
+
+
+</body>
+
+</html>

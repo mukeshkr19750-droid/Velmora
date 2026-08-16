@@ -1,0 +1,32 @@
+# Velmora Website - Robots.txt
+# Search Engine Optimization Configuration
+
+# Allow all search engines
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Prevent access to common vulnerability paths
+Disallow: /*.php
+Disallow: /*.asp
+Disallow: /*.aspx
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+
+# Sitemap location
+Sitemap: https://www.velmora.com/sitemap.xml
+
+# Allow all crawlers by default
+Allow: /
